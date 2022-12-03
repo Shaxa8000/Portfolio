@@ -1,5 +1,7 @@
 import Home from "../pages/Home";
 import Works from "../pages/Works";
+import About from '../pages/About';
+import Contact from "../pages/Contact";
 
 
 export const navbar = [
@@ -16,5 +18,20 @@ export const navbar = [
         path: '/works',
         element: <Works/>,
         hidden: false
-    }
+    },
+    {
+        id:3,
+        title: '#about-me',
+        path: '/about',
+        element: <About/>,
+        hidden: false
+    },
+    {
+        id:4,
+        title: '#contacts',
+        path: '/contact',
+        element: <Contact/>,
+        hidden: false
+    },
+
 ]
