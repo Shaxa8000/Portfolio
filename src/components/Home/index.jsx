@@ -1,8 +1,16 @@
-import React from 'react'
+import React from 'react';
+import {Container, Wrapper} from './style';
+import Main from './Main';
+import Projects from './Projects';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <Container>
+      <Wrapper>
+       <Main/>
+       <Projects/>
+      </Wrapper>
+    </Container>
   )
 }
 

@@ -17,7 +17,11 @@ const Wrapper = styled.div`
 `;
 
 const Section = styled.div`
-  color: #fff;
+  cursor: ${({logo}) => logo && 'pointer'};
+
+  .active {
+    color: var(--colorSecondary);
+  }
 `;
 
 const Link = styled(NavLink)`

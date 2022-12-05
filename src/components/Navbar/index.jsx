@@ -1,22 +1,25 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import {Container, Wrapper, Section, Link, LogoWrapper, Logo, Name} from './style';
 import {navbar} from '../../utils/navbar';
 
 const Navbar = () => {
+
+  const navigate = useNavigate();
+
   return (
     <Container>
       <Wrapper>
-        <Section>
-          <LogoWrapper>
-            <Logo/>
+        <Section logo>
+          <LogoWrapper onClick={()=> navigate('/home')}>
+            <Logo />
             <Name>Shokhboz</Name>
           </LogoWrapper>
         </Section>
         <Section>
           {
             navbar.map(({title, id, path})=> {
-               return <Link to={path} key={id}>{title}</Link>
+               return <Link className={({isActive}) => isActive && 'active'} to={path} key={id}>{title}</Link>
             })
           }
         </Section>
