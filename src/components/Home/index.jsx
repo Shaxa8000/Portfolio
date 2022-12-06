@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Wrapper} from './style';
 import Main from './Main';
 import Projects from './Projects';
+import Skills from './Skills';
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Wrapper>
        <Main/>
        <Projects/>
+       <Skills/>
       </Wrapper>
     </Container>
   )

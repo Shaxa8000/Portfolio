@@ -19,7 +19,7 @@ const Projects = () => {
           {
             projects.map((value)=>{
                return (
-                 <Card info={value}/>
+                 <Card key={value.id} info={value}/>
                )
             })
           }
