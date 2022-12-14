@@ -2,9 +2,11 @@ import React from 'react';
 import {Routes, Route, Navigate} from 'react-router-dom';
 import { navbar } from '../utils/navbar';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Root = () => {
   return (
+  <>
     <Routes>
       <Route element={<Navbar/>}>
         {
@@ -16,7 +18,8 @@ const Root = () => {
         <Route path='/' element={<Navigate to={'/home'}/>} />
         <Route path='*' element={<h1>404 Not Found</h1>} />
     </Routes>
-
+    <Footer/>
+    </>
   )
 }
 
