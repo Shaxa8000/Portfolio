@@ -61,7 +61,7 @@ const IconWrap = styled.div`
   gap: 10px;
 `;
 
-IconWrap.Button = styled.button`
+IconWrap.Button = styled.a`
   width: 109px;
   height: 37px;
   border: 1px solid #C778DD;
@@ -70,6 +70,7 @@ IconWrap.Button = styled.button`
   justify-content: center;
   cursor: pointer;
   background: #282C33;
+  text-decoration: none;
 
   :active {
     transform: scale(0.97);

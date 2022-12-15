@@ -14,8 +14,8 @@ export const navbar = [
     },
     {
         id:2,
-        title: '#works',
-        path: '/works',
+        title: '#projects',
+        path: '/projects',
         element: <Works/>,
         hidden: false
     },

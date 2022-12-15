@@ -1,6 +1,6 @@
 import React from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
-import {Container, Wrapper, Section, Link, LogoWrapper, Logo, Name} from './style';
+import {Container, SocialWrap, Line, Wrapper, Section, Link, LogoWrapper, Logo, Name} from './style';
 import {navbar} from '../../utils/navbar';
 
 const Navbar = () => {
@@ -9,6 +9,12 @@ const Navbar = () => {
 
   return (
     <Container>
+      <Line/>
+      <SocialWrap>
+        <SocialWrap.Git/>
+        <SocialWrap.Internet/>
+        <SocialWrap.Figma/>
+      </SocialWrap>
       <Wrapper>
         <Section logo>
           <LogoWrapper onClick={()=> navigate('/home')}>

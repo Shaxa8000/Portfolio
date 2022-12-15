@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container, Wrapper, HeadWrap, ArrowWrap, CardWrap} from './style';
-import {projects} from '../../../mock/projects';
+import {projects} from '../../../utils/projects';
 import Card from '../../Card';
 const Projects = () => {
   return (
@@ -19,8 +19,9 @@ const Projects = () => {
           {
             projects.map((value)=>{
                return (
+                !value.hidden &&(
                  <Card key={value.id} info={value}/>
-               )
+               ))
             })
           }
        </CardWrap>

@@ -1,43 +1,10 @@
 import styled from 'styled-components';
-import {ReactComponent as github} from '../../../assets/icons/github.svg';
-import {ReactComponent as figma} from '../../../assets/icons/figma.svg';
-import {ReactComponent as internet} from '../../../assets/icons/internet.svg';
 import {ReactComponent as logo} from '../../../assets/icons/main.svg';
 
 const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-`;
-
-const GitInfo = styled.div``;
-
-const Tick = styled.div`
-  width: 2px;
-  height: 175px;
-  background-color: #ABB2BF;
-  position: absolute;
-  left: 20px;
-  top: 0;
-`;
-
-const SocialsWrap = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  position: absolute;
-  left: 10px;
-  top: 195px;
-  cursor: pointer;
-`;
-
-const GitHub = styled(github)``;
-const Figma = styled(figma)``;
-const Internet = styled(internet)`
-  width: 20px;
-  height: 20px;
 `;
 
 const Wrapper = styled.div`
@@ -188,12 +155,4 @@ Quote.Author = styled.div`
   z-index: -1;
 `;
 
-
-
-
-
-
-
-
-
-export {Container, GitInfo, Tick, SocialsWrap,GitHub, Figma, Internet, Wrapper, Left, Right, Image, DotsImage, Quote, QuoteMark, QuoteMarkBottom  };
+export {Container, Wrapper, Left, Right, Image, DotsImage, Quote, QuoteMark, QuoteMarkBottom  };

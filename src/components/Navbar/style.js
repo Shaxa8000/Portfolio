@@ -1,10 +1,37 @@
 import styled from 'styled-components';
 import {NavLink} from 'react-router-dom';
 import { ReactComponent as logo } from '../../assets/icons/logo.svg';
+import { ReactComponent as github } from '../../assets/icons/github.svg';
+import { ReactComponent as internet } from '../../assets/icons/internet.svg';
+import { ReactComponent as figma } from '../../assets/icons/figma.svg';
 
 const Container = styled.div`
   width: 100%;
+  position: relative;
+`;
+
+const Line = styled.div`
+  width: 2px;
+  background: #ABB2BF;
+  height: 160px;
+  position: absolute;
+  left: 32px;
 `
+
+const SocialWrap = styled.div`
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   position: absolute;
+   left: 21px;
+   top: 180px;
+`;
+
+SocialWrap.Git = styled(github)``;
+SocialWrap.Internet = styled(internet)``;
+SocialWrap.Figma = styled(figma)``;
+
 
 const Wrapper = styled.div`
   width: 100%;
@@ -48,6 +75,6 @@ const Name = styled.div`
   font-size: 16px;
   line-height: 21px;
   color: var(--colorSecondary);
-`
+`;
 
-export {Container, Wrapper, Section, Link, LogoWrapper, Logo, Name};
+export {Container, SocialWrap, Line, Wrapper, Section, Link, LogoWrapper, Logo, Name};

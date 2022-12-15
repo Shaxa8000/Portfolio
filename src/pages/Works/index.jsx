@@ -1,10 +1,10 @@
 import React from 'react';
-import Works from '../../components/Works';
+import Projects from '../../components/Projects';
 
-const WorksPage = () => {
+const ProjectsPage = () => {
   return (
-    <div><Works/></div>
+    <div><Projects/></div>
   )
 }
 
-export default WorksPage
+export default ProjectsPage

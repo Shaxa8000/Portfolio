@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import {Container, GitInfo, Tick, SocialsWrap, GitHub, Internet, Figma, Wrapper, Left, Right, Image, DotsImage, Quote, QuoteMark, QuoteMarkBottom} from './style';
+import {Container, Wrapper, Left, Right, Image, DotsImage, Quote, QuoteMark, QuoteMarkBottom} from './style';
 import photo from '../../../assets/images/main.png';
 import dots from '../../../assets/images/dots.png';
 import quote from '../../../assets/images/quote.png';
@@ -8,14 +8,6 @@ import quote from '../../../assets/images/quote.png';
 const Main = () => {
   return (
     <Fragment>
-     <GitInfo>
-       <Tick/>
-       <SocialsWrap>
-         <GitHub/>
-         <Figma/>
-         <Internet/>
-       </SocialsWrap>
-     </GitInfo>
      <Container>
       <Wrapper>
         <Left>
