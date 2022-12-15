@@ -11,7 +11,8 @@ const Container = styled.div`
 
 const Line = styled.div`
   width: 100%;
-  border: 1px solid #ABB2BF;
+  height: 1px;
+  background-color: #ABB2BF;
   margin-bottom: 35px;
 `;
 
