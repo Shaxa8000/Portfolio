@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
-import {Container, SocialWrap, Line, Wrapper, Section, Link, LogoWrapper, Logo, Name, Hamburger, Close} from './style';
+import {Container, SocialWrap, Line, Wrapper, Section, Link, LogoWrapper, Logo, Name, Hamburger, Close, DrawerWrap, DrawerItem, Select, Option, SocialsWrap} from './style';
 import {navbar} from '../../utils/navbar';
 import { Drawer } from 'antd';
 
@@ -44,14 +44,9 @@ const Navbar = () => {
              }
           </Section.Child>
         </Section>
-        {/* <Space>
-        <Button type="primary" onClick={showDrawer}>
-          Open
-        </Button>
-      </Space> */}
       <Hamburger onClick={showDrawer}/>
       <Drawer
-        title="Basic Drawer"
+        // title="Basic Drawer"
         placement={placement}
         closable={false}
         onClose={onClose}
@@ -59,10 +54,33 @@ const Navbar = () => {
         key={placement}
         className="color"
       >
-        <Close onClick={onClose}/>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+       <Close.Wrap>
+        <Logo/>
+        <Name>Shokhboz</Name>
+        <Close className='close-btn' onClick={onClose}/>
+       </Close.Wrap>
+        <DrawerWrap>
+        {
+          navbar.map((value)=>{
+             return(
+              !value.hidden &&(
+              <DrawerItem className={({isActive}) => isActive && 'active'} key={value.id} to={value.path}>
+                  {value.title}
+              </DrawerItem>
+            ))
+          })
+        }
+        </DrawerWrap>
+        <Select name="language" id="language">
+           <Option value="language">ENG</Option>
+           <Option value="language">RUS</Option>
+           <Option value="language">UZB</Option>
+        </Select>
+        <SocialsWrap>
+          <SocialWrap.Git className='size'/>
+          <SocialWrap.Internet className='size'/>
+          <SocialWrap.Figma className='size'/>
+        </SocialsWrap>
       </Drawer>
       </Wrapper>
       <Outlet/>

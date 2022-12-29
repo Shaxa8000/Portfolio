@@ -52,6 +52,10 @@ const Wrapper = styled.div`
   justify-content: space-between;
   padding: 0 130px;
 
+  .color {
+    color: #fff;
+  }
+
   @media(max-width: 834px){
     padding: 0 100px;
   }
@@ -110,6 +114,59 @@ const Close = styled(close)`
   position: absolute;
   right: 25px;
   top: 25px;
+  color: #fff;
 `;
 
-export {Container, SocialWrap, Line, Wrapper, Section, Link, LogoWrapper, Logo, Name, Hamburger, Close};
+Close.Wrap = styled.div`
+  display: flex;
+  align-items: space-between;
+  gap: 8px;
+`;
+
+const DrawerWrap = styled.div`
+   margin-top: 55px;
+`;
+
+const DrawerItem = styled(NavLink)`
+  display: flex;
+  flex-direction:column;
+  gap: 32px;
+  font-family: 'Fira Code';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 70px;
+  color: #fff;
+`;
+
+const Select = styled.select`
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 15px;
+  background: #282C33;
+  color: #fff;
+  margin: 32px 0px 80px 0px;
+  border: none;
+`;
+
+const Option = styled.option`
+  font-size: 16px;
+  border: none;
+`;
+
+const SocialsWrap = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  .size {
+    width: 40px;
+    height: 40px;
+  }
+`;
+
+
+
+export {Container, SocialWrap, Line, Wrapper, Section, Link, LogoWrapper, Logo, Name, Hamburger, Close, DrawerWrap, DrawerItem, Select, Option, SocialsWrap};
