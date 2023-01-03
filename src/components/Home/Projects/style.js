@@ -62,6 +62,10 @@ const CardWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media(max-width: 376px){
+    flex-wrap: wrap;
+  }
 `
 
 

@@ -10,7 +10,11 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  margin: 50px 0%;
+  margin: 50px 0px;
+
+  @media(max-width: 376px){
+    flex-direction: column;
+  }
 `
 
 const Left = styled.div`
@@ -24,6 +28,13 @@ Left.Header = styled.div`
   font-size: 32px;
   line-height: 42px;
   color: #FFFFFF;
+
+  @media(max-width: 376px){
+    font-size: 28px;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
 `;
 
 Left.Info = styled.div`
@@ -35,6 +46,12 @@ Left.Info = styled.div`
   color: #ABB2BF;
   margin: 32px 0px;
   width: 95%;
+
+  @media(max-width: 376px){
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
 `;
 
 Left.Button = styled.button`
@@ -53,6 +70,10 @@ Left.Button = styled.button`
   :active {
         transform: scale(0.97);
     }
+
+    @media(max-width: 376px){
+      display: none;
+    }
 `;
 
 const Right = styled.div`
@@ -65,9 +86,18 @@ Right.Logo = styled(logo)`
   left: -10px;
   top: 80px;
   z-index: -1;
+
+  @media(max-width: 376px){
+    left: 10px;
+  }
 `;
 
-const Image = styled.img``;
+const Image = styled.img`
+  @media(max-width: 376px){
+    width: 350px;
+    padding: 0 15px;
+  }
+`;
 const DotsImage = styled.img`
   position: absolute;
   right: 65px;

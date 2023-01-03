@@ -9,7 +9,6 @@ const HeadWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
-  /* margin-bottom: 48px; */
 `;
 
 HeadWrapper.Head = styled.div`
@@ -31,7 +30,12 @@ HeadWrapper.Line = styled.div`
 const BoxWrapper = styled.div`
   display: flex;
   justify-content: space-between;
-`
+
+  @media(max-width: 376px){
+    flex-direction: column;
+  }
+
+`;
 
 const LeftBox = styled.div`
   margin-top: 50px;

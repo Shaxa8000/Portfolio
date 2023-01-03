@@ -106,8 +106,12 @@ const Name = styled.div`
 `;
 
 const Hamburger = styled(hamburger)`
-  /* display: none; */
+  display: none;
   cursor: pointer;
+
+  @media(max-width: 376px){
+    display: block;
+  }
 `;
 
 const Close = styled(close)`
