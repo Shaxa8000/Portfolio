@@ -5,6 +5,11 @@ const Container = styled.div`
   flex-direction: column;
   color: #fff;
   margin-bottom: 100px;
+  
+  @media(max-width: 376px){
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
 `;
 
 const HeaderWrap = styled.div`
@@ -12,6 +17,10 @@ const HeaderWrap = styled.div`
   align-items: center;
   width: 100%;
   gap: 15px;
+
+  @media(max-width: 376px){
+    margin: 50px 0 0 0;
+  }
 `;
 
 HeaderWrap.Header = styled.div`
@@ -21,6 +30,10 @@ HeaderWrap.Header = styled.div`
   font-size: 32px;
   line-height: 42px;
   color: #FFFFFF;
+
+  @media(max-width: 376px){
+    font-size: 28px;
+  }
 `;
 
 HeaderWrap.Line = styled.div`
@@ -43,6 +56,10 @@ Left.Dots1 = styled.img`
   width: 63px;
   height: 63px;
   margin: 50px 0px 0px 10px;
+
+  @media(max-width: 376px){
+    display: none;
+  }
 `;
 
 Left.Dots2 = styled.img`
@@ -51,8 +68,11 @@ Left.Dots2 = styled.img`
   position: absolute;
   top: 160px;
   left: 180px;
-`;
 
+  @media(max-width: 376px){
+    display: none;
+  }
+`;
 
 Left.Box = styled.div`
   width: 86px;
@@ -61,6 +81,10 @@ Left.Box = styled.div`
   position: absolute;
   right: 150px;
   top: 10px;
+
+  @media(max-width: 376px){
+    display: none;
+  }
 `;
 
 Left.SmallBox = styled.div`
@@ -70,6 +94,10 @@ Left.SmallBox = styled.div`
   position: absolute;
   right: 110px;
   top: 200px;
+
+  @media(max-width: 376px){
+    display: none;
+  }
 `;
 
 Left.Logo = styled.img`
@@ -78,6 +106,10 @@ Left.Logo = styled.img`
   position: absolute;
   top: 180px;
   left: 20px;
+
+  @media(max-width: 376px){
+    display: none;
+  }
 `;
 
 const Right = styled.div`
@@ -89,17 +121,34 @@ Right.Container = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 10px;
+
+
+  @media(max-width: 376px){
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
 `;
+
 Right.Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
   gap: 10px;
+
+  @media(max-width: 376px){
+    gap: 15px;
+  }
 `;
 
 Right.Box1 = styled.div`
   width: 160px;
   height: fit-content;
   border: 1px solid #ABB2BF;
+
+  @media(max-width: 376px){
+    /* width: 100%; */
+  }
 `;
 
 const Header = styled.div`
@@ -125,6 +174,10 @@ const Text = styled.div`
   line-height: 21px;
   color: #ABB2BF;
   padding: 10px;
+
+  @media(max-width: 376px){
+    font-size: 14px;
+  }
 `;
 
 export {Container, HeaderWrap, Left, Right, ContentWrap, Header, Line, Text };

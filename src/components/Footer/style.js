@@ -7,6 +7,12 @@ import {ReactComponent as game} from '../../assets/icons/game.svg';
 
 const Container = styled.div`
   margin-top: 100px;
+
+  @media(max-width: 376px){
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 50px;
+  }
 `;
 
 const Line = styled.div`
@@ -24,6 +30,11 @@ const Body = styled.div`
   max-width: 1440px;
   padding: 0 136px;
   margin-bottom: 50px;
+
+  @media(max-width: 376px){
+    flex-direction: column;
+    padding: 0 15px;
+  }
 `;
 
 const Left = styled.div`
@@ -35,11 +46,20 @@ const Left = styled.div`
 Left.Wrapper = styled.div`
   display: flex;
   align-items: center;
+
+  @media(max-width: 376px){
+   justify-content: center;
+  }
 `;
 
 Left.Logo = styled(logo)`
   width: 40px;
   height: 30px;
+
+  @media(max-width: 376px){
+    width: 55px;
+    height: 45px;
+  }
 `;
 
 Left.Mail = styled.div`
@@ -50,6 +70,10 @@ Left.Mail = styled.div`
   line-height: 21px;
   color: #ABB2BF;
   margin-left: 25px;
+
+  @media(max-width: 376px){
+   display: none;
+  }
 `;
 
 Left.Name = styled.div`
@@ -59,6 +83,10 @@ Left.Name = styled.div`
   font-size: 24px;
   line-height: 31px;
   color: #FFFFFF;
+
+  @media(max-width: 376px){
+    font-size: 28px;
+  }
 `;
 
 Left.Info = styled.div`
@@ -70,6 +98,14 @@ Left.Info = styled.div`
   color: #FFFFFF;
   margin-left: 10px;
   width: 90%;
+
+  
+  @media(max-width: 376px){
+   width: 100%;
+   margin-left: 0px;
+   text-align: justify;
+   margin-bottom: 20px;
+  }
 `;
 
 const Right = styled.div`

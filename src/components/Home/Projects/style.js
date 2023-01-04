@@ -5,6 +5,13 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 70px 0;
+
+  @media(max-width: 376px){
+    width: 100%;
+    padding: 0 15px;
+    margin: 0px;
+    align-items: center;
+  }
 `;
 
 const HeadWrap = styled.div`
@@ -12,13 +19,18 @@ const HeadWrap = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 65px;
+
+  @media(max-width: 376px){
+    margin: 30px 0;
+    width: 100%;
+  }
 `;
 
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
-`
+`;
 
 HeadWrap.Header = styled.div`
   font-family: 'Fira Code';
@@ -27,6 +39,10 @@ HeadWrap.Header = styled.div`
   font-size: 32px;
   line-height: 42px;
   color: #FFFFFF;
+
+  @media(max-width: 376px){
+    font-size: 28px;
+  }
 `;
 
 HeadWrap.Line = styled.div`
@@ -64,6 +80,7 @@ const CardWrap = styled.div`
   justify-content: space-between;
 
   @media(max-width: 376px){
+    gap: 20px;
     flex-wrap: wrap;
   }
 `

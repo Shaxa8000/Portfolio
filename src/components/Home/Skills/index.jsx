@@ -20,11 +20,11 @@ const Skills = () => {
             </Left>
             <Right>
               <Right.Container>
-                 <Right.Box1>
+                 <Right.Box1> 
                    <Header>Languages</Header>
                    <Line/>
                    <Text>JavaScript TypeScript</Text>
-                 </Right.Box1>
+                 </Right.Box1> 
                  <Right.Wrapper>
                  <Right.Box1>
                    <Header>Libraries</Header>
@@ -50,7 +50,6 @@ const Skills = () => {
                   </Right.Box1>
                  </Right.Wrapper>
               </Right.Container>
-
             </Right>
         </ContentWrap>
     </Container>

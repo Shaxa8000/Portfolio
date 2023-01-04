@@ -15,6 +15,10 @@ const Container = styled.div`
   width: 300px;
   height: 391px;
   border: 1px solid #ABB2BF;
+
+  @media(max-width: 376px){
+    width: 100%;
+  }
 `;
 
 const Img = styled.img`

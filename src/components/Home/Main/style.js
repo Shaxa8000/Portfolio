@@ -34,6 +34,7 @@ Left.Header = styled.div`
     width: 100%;
     padding: 0 15px;
     text-align: center;
+    line-height: 35px;
   }
 `;
 
@@ -88,13 +89,15 @@ Right.Logo = styled(logo)`
   z-index: -1;
 
   @media(max-width: 376px){
-    left: 10px;
+    width: 100px;
+    left: 15px;
+    top: 25px;
   }
 `;
 
 const Image = styled.img`
   @media(max-width: 376px){
-    width: 350px;
+    width: 375px;
     padding: 0 15px;
   }
 `;
@@ -102,6 +105,11 @@ const DotsImage = styled.img`
   position: absolute;
   right: 65px;
   bottom: 65px;
+
+  @media(max-width: 376px){
+    width: 56px;
+    right: 30px;
+  }
 `;
 
 Right.Box = styled.div`
@@ -114,6 +122,13 @@ Right.Box = styled.div`
   position: absolute;
   bottom: -20px;
   left: 18px;
+
+  @media(max-width: 376px){
+    width:307px;
+    height: 40px;
+    bottom:-35px;
+    left: 28px;
+  }
 `;
 
 Right.InnerBox = styled.div`
@@ -131,6 +146,10 @@ Right.InnerText = styled.div`
   line-height: 21px;
   color: #ABB2BF;
   margin-left: 10px;
+
+  @media(max-width: 376px){
+    font-size: 14px;
+  }
 `;
 
 const Quote = styled.div`
@@ -143,6 +162,10 @@ const Quote = styled.div`
   border: 1px solid #ABB2BF;
   margin: 50px 0;
   position: relative;
+
+  @media(max-width: 376px){
+    display: none;
+  }
 `;
 
 Quote.Text = styled.div`
