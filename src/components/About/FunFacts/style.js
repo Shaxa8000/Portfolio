@@ -14,6 +14,10 @@ const Header = styled.div`
   line-height: 42px;
   color: #FFFFFF;
   margin: 70px 0px 30px 0px;
+
+  @media(max-width: 376px){
+    margin: 40px 0;
+  }
 `;
 
 const BodyWrap = styled.div`
@@ -49,6 +53,10 @@ const Right = styled.div`
   width: 100%;
   position: relative;
   flex: 1;
+
+  @media(max-width: 376px){
+    display: none;
+  }
 `;
 
 Right.Logo = styled.img`

@@ -15,6 +15,11 @@ const Question = styled.div`
   line-height: 21px;
   color: #FFFFFF;
   margin: 50px 0px;
+
+  @media(max-width: 376px){
+    margin: 0 0 40px 0;
+    font-size: 25px;
+  }
 `;
 
 const Body = styled.div`
@@ -22,7 +27,11 @@ const Body = styled.div`
   justify-content: space-between;
 `;
 
-const Left = styled.div``;
+const Left = styled.div`
+  @media(max-width: 376px){
+    display: none;
+  }
+`;
 
 Left.Text = styled.div`
   font-family: 'Fira Code';
@@ -45,6 +54,10 @@ Right.Box = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+
+  @media(max-width: 376px){
+    width: 100%;
+  }
 `;
 
 Right.Message = styled.div`

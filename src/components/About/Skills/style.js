@@ -12,18 +12,30 @@ const Header = styled.div`
   line-height: 42px;
   color: #FFFFFF;
   margin: 50px 0px;
+
+  @media(max-width: 376px){
+    margin: 0 0 40px 0;
+  }
 `;
 
 const BoxWrap = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media(max-width: 376px){
+    gap: 20px;
+  }
 `;
 
 const Box = styled.div`
   width: 200px;
   height: fit-content;
   border: 1px solid #ABB2BF;
+
+  @media(max-width: 376px){
+    width: 100%;
+  }
 `;
 
 const Title = styled.div`
